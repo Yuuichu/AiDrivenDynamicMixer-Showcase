@@ -74,7 +74,7 @@ Each recommendation contains:
 - `requires_human_review: true`,
 - a **host mapping hint** for REAPER and for Wwise, each phrased as an instruction to a human reviewer.
 
-Example (from the bundled synthetic demo): `music_pad` overlapping `dialogue_main` in the clarity bands produces a ducking recommendation for 1250–5000 Hz, −2.5 dB, 120 ms attack, 700 ms release, confidence ≈ 0.35.
+Example (illustrative, from the repository's synthetic example stems): `music_pad` overlapping `dialogue_main` in the clarity bands produces a ducking recommendation for 1250–5000 Hz, −2.5 dB, 120 ms attack, 700 ms release, confidence ≈ 0.35.
 
 Low confidence plus a mandatory review flag is the intended behaviour: the tool's job is to point at a specific moment, not to decide.
 

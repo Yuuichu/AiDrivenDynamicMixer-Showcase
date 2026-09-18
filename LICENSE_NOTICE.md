@@ -18,7 +18,7 @@ Neither REAPER nor Wwise is included, linked against, or redistributed. The adap
 
 **No audio and no session material is included.**
 
-The demo artefacts under `demo/` were produced from the repository's **synthetic example stems** (generated test material: one dialogue line, one music pad, one low ambience). No production or client session was analysed to produce them.
+No generated analysis output is included in this showcase. The example telemetry input under `examples/` is the repository's **synthetic test material** (generated: one dialogue line, one music pad, one low ambience). No production or client session was analysed to produce any of it.
 
 ## Sanitization record
 
@@ -31,6 +31,6 @@ The private source previously contained **project-specific strings**:
 
 1. `per_second.py` was rewritten to derive track labels **generically** — a leading numeric index prefix is stripped and a `_vo_` convention is honoured — so no table of known ids ships. Duplication rules now match on label keywords instead of hardcoded ids. Verified by re-running the pipeline (`tests`: 5 passed) and by scanning the module, the working tree and **every reachable git object** for the previous identifiers: zero matches.
 2. `out/` was moved out of the project to a quarantine directory outside the repository, so no production analysis is present in the working tree.
-3. The showcase demo was regenerated from the repository's synthetic example stems; the one generated file that had inherited a hardcoded title was removed.
+3. All generated demo output was then dropped from this showcase entirely; the one file that had inherited a hardcoded title was removed first.
 
 The remaining `out/` exclusion is therefore a build-artefact exclusion only, not a content restriction.

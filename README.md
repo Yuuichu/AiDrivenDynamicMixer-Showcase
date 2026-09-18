@@ -2,8 +2,6 @@
 
 Cross-host mix diagnostics: analyse offline stems or runtime telemetry, locate **dialogue masking** and **spatial conflicts**, and produce a reviewable JSON/HTML report — without ever modifying the session.
 
-![The HTML report for the bundled example session](screenshots/report.png)
-
 ## Why I Built This
 
 Mixing for intelligibility is the part of the job that is hardest to do by ear at speed. Dialogue can be buried by a music bed or an ambience, gunfire can smear the clarity band of a line, and a stereo pad can collapse the centre image — and all of it is easy to miss when listening to one pass instead of the 40 seconds where it matters.
@@ -56,21 +54,6 @@ Human review -> applied by hand in REAPER / Wwise
 - **Human-in-the-loop is enforced in the data model.** Every recommendation carries `requires_human_review: true`, and every host mapping hint is phrased as "map this … **after human approval**".
 - **Standard library by default.** WAV reading uses the standard library; narrow-band analysis uses the Goertzel algorithm, with numpy as an optional accelerator rather than a requirement.
 
-## Demo
-
-The included demo was produced by the tool itself, from the repository's **synthetic example stems** (a dialogue line, a music pad and a low ambience), so it can be inspected without any production material:
-
-| Artifact | What it shows |
-|---|---|
-| `demo/report.html` | The HTML report: per-track features and the detected issues |
-| `demo/issues.json` | Detected issues with severity, evidence and exact time ranges |
-| `demo/recommendations.json` | Recommended operations with review flags and host mapping hints |
-| `demo/session.json` | The analysed session (tracks, roles, frame geometry) |
-| `demo/spatial_summary.json` | The spatial-conflict summary |
-| `examples/telemetry-example.json` | The Wwise-style telemetry input format |
-
-A worked example from the demo: `music_pad` overlaps `dialogue_main` in the clarity bands at 00:00:00.500–00:00:00.750 (severity ≈ 0.41), producing a recommendation for band-limited ducking of 1250–5000 Hz at −2.5 dB with a 120 ms attack and 700 ms release — flagged for human review.
-
 ## Architecture
 
 ```text
@@ -109,7 +92,7 @@ These are deliberate boundaries, not a roadmap:
 
 This is a portfolio showcase repository. The full development repository remains private.
 
-Included: the masking/rule-engine/report core, the CLI-visible data contract, the example telemetry input, and demo output generated from synthetic stems. Excluded: session analysis output from real projects, the REAPER/Wwise adapter implementations, and production audio.
+Included: the masking/rule-engine/report core in `selected-code/`, the CLI-visible data contract, and an example telemetry input in `examples/telemetry-example.json`. Excluded: session analysis output from real projects, the REAPER/Wwise adapter implementations, and production audio.
 
 ## Tech Stack
 
