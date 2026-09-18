@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AiDrivenDynamicMixer Report</title>
+  <style>
+    body { font-family: Segoe UI, Arial, sans-serif; margin: 32px; color: #1f2933; }
+    h1, h2 { margin: 0 0 12px; }
+    section { margin: 28px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+    th { background: #eef2f7; text-align: left; }
+    code { background: #eef2f7; padding: 2px 4px; }
+  </style>
+</head>
+<body>
+  <h1>AiDrivenDynamicMixer Report</h1>
+  <p>Host: <code>reaper</code> | Duration: 3.00s | Frame: 250ms</p>
+
+  <section>
+    <h2>Tracks / Buses</h2>
+    <table><thead><tr><th>ID</th><th>Name</th><th>Role</th><th>Source</th></tr></thead><tbody><tr><td>ambience_low</td><td>ambience_low</td><td>ambience</td><td>examples\reaper_cutscene\stems\ambience_low.wav</td></tr>
+<tr><td>dialogue_main</td><td>dialogue_main</td><td>dialogue</td><td>examples\reaper_cutscene\stems\dialogue_main.wav</td></tr>
+<tr><td>music_pad</td><td>music_pad</td><td>music</td><td>examples\reaper_cutscene\stems\music_pad.wav</td></tr></tbody></table>
+  </section>
+
+  <section>
+    <h2>Feature Summary</h2>
+    <ul><li>ambience_low: 12 frames, role=ambience</li>
+<li>dialogue_main: 12 frames, role=dialogue</li>
+<li>music_pad: 12 frames, role=music</li></ul>
+  </section>
+
+  <section>
+    <h2>Spatial Summary</h2>
+    <p>Distance is a proxy, not an absolute physical distance. Use it as a mix review hint.</p>
+    <table><thead><tr><th>ID</th><th>Role</th><th>Channels</th><th>Avg Pan</th><th>Avg Width</th><th>Avg L/R Correlation</th><th>Avg Distance Proxy</th></tr></thead><tbody><tr><td>ambience_low</td><td>ambience</td><td>1</td><td>0.000</td><td>0.000</td><td>1.000</td><td>0.000</td></tr>
+<tr><td>dialogue_main</td><td>dialogue</td><td>1</td><td>0.000</td><td>0.000</td><td>1.000</td><td>0.000</td></tr>
+<tr><td>music_pad</td><td>music</td><td>1</td><td>0.000</td><td>0.000</td><td>1.000</td><td>0.000</td></tr></tbody></table>
+  </section>
+
+  <section>
+    <h2>Spatial Risks</h2>
+    <table><thead><tr><th>Type</th><th>Time</th><th>Target</th><th>Masker</th><th>Severity</th><th>Reason</th></tr></thead><tbody></tbody></table>
+  </section>
+
+  <section>
+    <h2>Issues</h2>
+    <table><thead><tr><th>ID</th><th>Type</th><th>Time</th><th>Target</th><th>Masker</th><th>Severity</th><th>Reason</th></tr></thead><tbody><tr><td>issue_1</td><td>dialogue_masking</td><td>00:00.500 - 00:00.750</td><td>dialogue_main</td><td>music_pad</td><td>0.41</td><td>music_pad overlaps dialogue clarity bands near dialogue_main.</td></tr>
+<tr><td>issue_2</td><td>dialogue_masking</td><td>00:00.750 - 00:01.000</td><td>dialogue_main</td><td>music_pad</td><td>0.41</td><td>music_pad overlaps dialogue clarity bands near dialogue_main.</td></tr>
+<tr><td>issue_3</td><td>dialogue_masking</td><td>00:01.000 - 00:01.250</td><td>dialogue_main</td><td>music_pad</td><td>0.41</td><td>music_pad overlaps dialogue clarity bands near dialogue_main.</td></tr>
+<tr><td>issue_4</td><td>dialogue_masking</td><td>00:01.250 - 00:01.500</td><td>dialogue_main</td><td>music_pad</td><td>0.41</td><td>music_pad overlaps dialogue clarity bands near dialogue_main.</td></tr>
+<tr><td>issue_5</td><td>dialogue_masking</td><td>00:01.500 - 00:01.750</td><td>dialogue_main</td><td>music_pad</td><td>0.41</td><td>music_pad overlaps dialogue clarity bands near dialogue_main.</td></tr>
+<tr><td>issue_6</td><td>dialogue_masking</td><td>00:01.750 - 00:02.000</td><td>dialogue_main</td><td>music_pad</td><td>0.41</td><td>music_pad overlaps dialogue clarity bands near dialogue_main.</td></tr>
+<tr><td>issue_7</td><td>dialogue_masking</td><td>00:02.000 - 00:02.250</td><td>dialogue_main</td><td>music_pad</td><td>0.41</td><td>music_pad overlaps dialogue clarity bands near dialogue_main.</td></tr>
+<tr><td>issue_8</td><td>dialogue_masking</td><td>00:02.250 - 00:02.500</td><td>dialogue_main</td><td>music_pad</td><td>0.41</td><td>music_pad overlaps dialogue clarity bands near dialogue_main.</td></tr></tbody></table>
+  </section>
+
+  <section>
+    <h2>Recommendations</h2>
+    <table><thead><tr><th>ID</th><th>Operation</th><th>Time</th><th>Target</th><th>Suggested Amount</th><th>Confidence</th><th>Human Review</th></tr></thead><tbody><tr><td>rec_1</td><td>dynamic_eq_ducking</td><td>00:00.500 - 00:00.750</td><td>music_pad</td><td>{&quot;band_hz&quot;: [1250, 5000], &quot;gain_db&quot;: -2.5, &quot;attack_ms&quot;: 120, &quot;release_ms&quot;: 700}</td><td>0.35</td><td>yes</td></tr>
+<tr><td>rec_2</td><td>dynamic_eq_ducking</td><td>00:00.750 - 00:01.000</td><td>music_pad</td><td>{&quot;band_hz&quot;: [1250, 5000], &quot;gain_db&quot;: -2.5, &quot;attack_ms&quot;: 120, &quot;release_ms&quot;: 700}</td><td>0.35</td><td>yes</td></tr>
+<tr><td>rec_3</td><td>dynamic_eq_ducking</td><td>00:01.000 - 00:01.250</td><td>music_pad</td><td>{&quot;band_hz&quot;: [1250, 5000], &quot;gain_db&quot;: -2.5, &quot;attack_ms&quot;: 120, &quot;release_ms&quot;: 700}</td><td>0.35</td><td>yes</td></tr>
+<tr><td>rec_4</td><td>dynamic_eq_ducking</td><td>00:01.250 - 00:01.500</td><td>music_pad</td><td>{&quot;band_hz&quot;: [1250, 5000], &quot;gain_db&quot;: -2.5, &quot;attack_ms&quot;: 120, &quot;release_ms&quot;: 700}</td><td>0.35</td><td>yes</td></tr>
+<tr><td>rec_5</td><td>dynamic_eq_ducking</td><td>00:01.500 - 00:01.750</td><td>music_pad</td><td>{&quot;band_hz&quot;: [1250, 5000], &quot;gain_db&quot;: -2.5, &quot;attack_ms&quot;: 120, &quot;release_ms&quot;: 700}</td><td>0.35</td><td>yes</td></tr>
+<tr><td>rec_6</td><td>dynamic_eq_ducking</td><td>00:01.750 - 00:02.000</td><td>music_pad</td><td>{&quot;band_hz&quot;: [1250, 5000], &quot;gain_db&quot;: -2.5, &quot;attack_ms&quot;: 120, &quot;release_ms&quot;: 700}</td><td>0.35</td><td>yes</td></tr>
+<tr><td>rec_7</td><td>dynamic_eq_ducking</td><td>00:02.000 - 00:02.250</td><td>music_pad</td><td>{&quot;band_hz&quot;: [1250, 5000], &quot;gain_db&quot;: -2.5, &quot;attack_ms&quot;: 120, &quot;release_ms&quot;: 700}</td><td>0.35</td><td>yes</td></tr>
+<tr><td>rec_8</td><td>dynamic_eq_ducking</td><td>00:02.250 - 00:02.500</td><td>music_pad</td><td>{&quot;band_hz&quot;: [1250, 5000], &quot;gain_db&quot;: -2.5, &quot;attack_ms&quot;: 120, &quot;release_ms&quot;: 700}</td><td>0.35</td><td>yes</td></tr></tbody></table>
+  </section>
+</body>
+</html>

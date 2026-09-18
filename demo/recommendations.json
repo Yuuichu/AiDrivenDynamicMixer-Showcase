@@ -1,0 +1,194 @@
+[
+  {
+    "id": "rec_1",
+    "issue_id": "issue_1",
+    "time_start": 0.5,
+    "time_end": 0.75,
+    "target": "music_pad",
+    "operation": "dynamic_eq_ducking",
+    "suggested_amount": {
+      "band_hz": [
+        1250,
+        5000
+      ],
+      "gain_db": -2.5,
+      "attack_ms": 120,
+      "release_ms": 700
+    },
+    "confidence": 0.35,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "requires_human_review": true,
+    "host_mapping_hint": {
+      "reaper": "Map to an EQ band gain envelope on the masker track after human approval.",
+      "wwise": "Map to Meter/RTPC-driven ducking or snapshot EQ on the masker bus after human approval."
+    }
+  },
+  {
+    "id": "rec_2",
+    "issue_id": "issue_2",
+    "time_start": 0.75,
+    "time_end": 1.0,
+    "target": "music_pad",
+    "operation": "dynamic_eq_ducking",
+    "suggested_amount": {
+      "band_hz": [
+        1250,
+        5000
+      ],
+      "gain_db": -2.5,
+      "attack_ms": 120,
+      "release_ms": 700
+    },
+    "confidence": 0.35,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "requires_human_review": true,
+    "host_mapping_hint": {
+      "reaper": "Map to an EQ band gain envelope on the masker track after human approval.",
+      "wwise": "Map to Meter/RTPC-driven ducking or snapshot EQ on the masker bus after human approval."
+    }
+  },
+  {
+    "id": "rec_3",
+    "issue_id": "issue_3",
+    "time_start": 1.0,
+    "time_end": 1.25,
+    "target": "music_pad",
+    "operation": "dynamic_eq_ducking",
+    "suggested_amount": {
+      "band_hz": [
+        1250,
+        5000
+      ],
+      "gain_db": -2.5,
+      "attack_ms": 120,
+      "release_ms": 700
+    },
+    "confidence": 0.35,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "requires_human_review": true,
+    "host_mapping_hint": {
+      "reaper": "Map to an EQ band gain envelope on the masker track after human approval.",
+      "wwise": "Map to Meter/RTPC-driven ducking or snapshot EQ on the masker bus after human approval."
+    }
+  },
+  {
+    "id": "rec_4",
+    "issue_id": "issue_4",
+    "time_start": 1.25,
+    "time_end": 1.5,
+    "target": "music_pad",
+    "operation": "dynamic_eq_ducking",
+    "suggested_amount": {
+      "band_hz": [
+        1250,
+        5000
+      ],
+      "gain_db": -2.5,
+      "attack_ms": 120,
+      "release_ms": 700
+    },
+    "confidence": 0.35,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "requires_human_review": true,
+    "host_mapping_hint": {
+      "reaper": "Map to an EQ band gain envelope on the masker track after human approval.",
+      "wwise": "Map to Meter/RTPC-driven ducking or snapshot EQ on the masker bus after human approval."
+    }
+  },
+  {
+    "id": "rec_5",
+    "issue_id": "issue_5",
+    "time_start": 1.5,
+    "time_end": 1.75,
+    "target": "music_pad",
+    "operation": "dynamic_eq_ducking",
+    "suggested_amount": {
+      "band_hz": [
+        1250,
+        5000
+      ],
+      "gain_db": -2.5,
+      "attack_ms": 120,
+      "release_ms": 700
+    },
+    "confidence": 0.35,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "requires_human_review": true,
+    "host_mapping_hint": {
+      "reaper": "Map to an EQ band gain envelope on the masker track after human approval.",
+      "wwise": "Map to Meter/RTPC-driven ducking or snapshot EQ on the masker bus after human approval."
+    }
+  },
+  {
+    "id": "rec_6",
+    "issue_id": "issue_6",
+    "time_start": 1.75,
+    "time_end": 2.0,
+    "target": "music_pad",
+    "operation": "dynamic_eq_ducking",
+    "suggested_amount": {
+      "band_hz": [
+        1250,
+        5000
+      ],
+      "gain_db": -2.5,
+      "attack_ms": 120,
+      "release_ms": 700
+    },
+    "confidence": 0.35,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "requires_human_review": true,
+    "host_mapping_hint": {
+      "reaper": "Map to an EQ band gain envelope on the masker track after human approval.",
+      "wwise": "Map to Meter/RTPC-driven ducking or snapshot EQ on the masker bus after human approval."
+    }
+  },
+  {
+    "id": "rec_7",
+    "issue_id": "issue_7",
+    "time_start": 2.0,
+    "time_end": 2.25,
+    "target": "music_pad",
+    "operation": "dynamic_eq_ducking",
+    "suggested_amount": {
+      "band_hz": [
+        1250,
+        5000
+      ],
+      "gain_db": -2.5,
+      "attack_ms": 120,
+      "release_ms": 700
+    },
+    "confidence": 0.35,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "requires_human_review": true,
+    "host_mapping_hint": {
+      "reaper": "Map to an EQ band gain envelope on the masker track after human approval.",
+      "wwise": "Map to Meter/RTPC-driven ducking or snapshot EQ on the masker bus after human approval."
+    }
+  },
+  {
+    "id": "rec_8",
+    "issue_id": "issue_8",
+    "time_start": 2.25,
+    "time_end": 2.5,
+    "target": "music_pad",
+    "operation": "dynamic_eq_ducking",
+    "suggested_amount": {
+      "band_hz": [
+        1250,
+        5000
+      ],
+      "gain_db": -2.5,
+      "attack_ms": 120,
+      "release_ms": 700
+    },
+    "confidence": 0.35,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "requires_human_review": true,
+    "host_mapping_hint": {
+      "reaper": "Map to an EQ band gain envelope on the masker track after human approval.",
+      "wwise": "Map to Meter/RTPC-driven ducking or snapshot EQ on the masker bus after human approval."
+    }
+  }
+]

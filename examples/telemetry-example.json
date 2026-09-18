@@ -1,0 +1,71 @@
+{
+  "id": "wwise_combat_mix_demo",
+  "frame_ms": 250,
+  "duration_seconds": 1.0,
+  "states": ["CombatHigh"],
+  "rtpcs": [{"name": "CombatIntensity", "value": 0.85}],
+  "snapshots": ["Combat_Mix"],
+  "buses": [
+    {
+      "id": "dialogue",
+      "name": "Dialogue Bus",
+      "role": "dialogue",
+      "wwise_path": "\\Actor-Mixer Hierarchy\\Dialogue",
+      "frames": [
+        {
+          "time_seconds": 0.0,
+          "rms_db": -25.0,
+          "peak_db": -8.0,
+          "loudness_db": -25.0,
+          "band_db": {"1.25k-2.5k": -24.0, "2.5k-5k": -26.0, "40-80": -80.0, "80-160": -70.0, "160-320": -45.0}
+        },
+        {
+          "time_seconds": 0.25,
+          "rms_db": -24.0,
+          "peak_db": -7.5,
+          "loudness_db": -24.0,
+          "band_db": {"1.25k-2.5k": -23.0, "2.5k-5k": -25.0, "40-80": -80.0, "80-160": -70.0, "160-320": -45.0}
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "name": "Music Bus",
+      "role": "music",
+      "wwise_path": "\\Master-Mixer Hierarchy\\Default Work Unit\\Music",
+      "frames": [
+        {
+          "time_seconds": 0.0,
+          "rms_db": -18.0,
+          "peak_db": -4.0,
+          "loudness_db": -18.0,
+          "band_db": {"1.25k-2.5k": -22.0, "2.5k-5k": -23.0, "40-80": -18.0, "80-160": -16.0, "160-320": -17.0}
+        },
+        {
+          "time_seconds": 0.25,
+          "rms_db": -17.0,
+          "peak_db": -3.5,
+          "loudness_db": -17.0,
+          "band_db": {"1.25k-2.5k": -21.0, "2.5k-5k": -22.0, "40-80": -18.0, "80-160": -16.0, "160-320": -17.0}
+        }
+      ]
+    },
+    {
+      "id": "sfx",
+      "name": "SFX Bus",
+      "role": "sfx",
+      "wwise_path": "\\Master-Mixer Hierarchy\\Default Work Unit\\SFX",
+      "frames": [
+        {
+          "time_seconds": 0.0,
+          "rms_db": -22.0,
+          "peak_db": -0.3,
+          "loudness_db": -22.0,
+          "clipping_risk": true,
+          "band_db": {"1.25k-2.5k": -29.0, "2.5k-5k": -28.0, "40-80": -24.0, "80-160": -24.0, "160-320": -26.0}
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,41 @@
+{
+  "tracks": [
+    {
+      "track_id": "ambience_low",
+      "role": "ambience",
+      "channel_count": 1,
+      "spatial_available": false,
+      "spatial_degraded": false,
+      "avg_pan": 0.0,
+      "avg_width": 0.0,
+      "avg_correlation": 1.0,
+      "avg_distance_proxy": 0.0,
+      "avg_brightness_db": -120.0
+    },
+    {
+      "track_id": "dialogue_main",
+      "role": "dialogue",
+      "channel_count": 1,
+      "spatial_available": false,
+      "spatial_degraded": false,
+      "avg_pan": 0.0,
+      "avg_width": 0.0,
+      "avg_correlation": 1.0,
+      "avg_distance_proxy": 0.0,
+      "avg_brightness_db": -120.0
+    },
+    {
+      "track_id": "music_pad",
+      "role": "music",
+      "channel_count": 1,
+      "spatial_available": false,
+      "spatial_degraded": false,
+      "avg_pan": 0.0,
+      "avg_width": 0.0,
+      "avg_correlation": 1.0,
+      "avg_distance_proxy": 0.0,
+      "avg_brightness_db": -120.0
+    }
+  ],
+  "issues": []
+}

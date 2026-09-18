@@ -1,0 +1,34 @@
+{
+  "id": "stems",
+  "host": "reaper",
+  "sample_rate": 16000,
+  "duration_seconds": 3.0,
+  "frame_ms": 250,
+  "tracks": [
+    {
+      "id": "ambience_low",
+      "name": "ambience_low",
+      "role": "ambience",
+      "source": "examples\\reaper_cutscene\\stems\\ambience_low.wav",
+      "host_ref": "stem:1"
+    },
+    {
+      "id": "dialogue_main",
+      "name": "dialogue_main",
+      "role": "dialogue",
+      "source": "examples\\reaper_cutscene\\stems\\dialogue_main.wav",
+      "host_ref": "stem:2"
+    },
+    {
+      "id": "music_pad",
+      "name": "music_pad",
+      "role": "music",
+      "source": "examples\\reaper_cutscene\\stems\\music_pad.wav",
+      "host_ref": "stem:3"
+    }
+  ],
+  "metadata": {
+    "input": "examples\\reaper_cutscene\\stems",
+    "sample_rates_mixed": false
+  }
+}

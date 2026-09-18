@@ -1,0 +1,114 @@
+[
+  {
+    "id": "issue_1",
+    "issue_type": "dialogue_masking",
+    "time_start": 0.5,
+    "time_end": 0.75,
+    "target": "dialogue_main",
+    "masker": "music_pad",
+    "severity": 0.4125995690052646,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "evidence": {
+      "target_clarity_db": -85.06,
+      "masker_clarity_db": -83.63
+    }
+  },
+  {
+    "id": "issue_2",
+    "issue_type": "dialogue_masking",
+    "time_start": 0.75,
+    "time_end": 1.0,
+    "target": "dialogue_main",
+    "masker": "music_pad",
+    "severity": 0.4125995690052646,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "evidence": {
+      "target_clarity_db": -85.06,
+      "masker_clarity_db": -83.63
+    }
+  },
+  {
+    "id": "issue_3",
+    "issue_type": "dialogue_masking",
+    "time_start": 1.0,
+    "time_end": 1.25,
+    "target": "dialogue_main",
+    "masker": "music_pad",
+    "severity": 0.4125995690052646,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "evidence": {
+      "target_clarity_db": -85.06,
+      "masker_clarity_db": -83.63
+    }
+  },
+  {
+    "id": "issue_4",
+    "issue_type": "dialogue_masking",
+    "time_start": 1.25,
+    "time_end": 1.5,
+    "target": "dialogue_main",
+    "masker": "music_pad",
+    "severity": 0.4125995690052646,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "evidence": {
+      "target_clarity_db": -85.06,
+      "masker_clarity_db": -83.63
+    }
+  },
+  {
+    "id": "issue_5",
+    "issue_type": "dialogue_masking",
+    "time_start": 1.5,
+    "time_end": 1.75,
+    "target": "dialogue_main",
+    "masker": "music_pad",
+    "severity": 0.4125995690052646,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "evidence": {
+      "target_clarity_db": -85.06,
+      "masker_clarity_db": -83.63
+    }
+  },
+  {
+    "id": "issue_6",
+    "issue_type": "dialogue_masking",
+    "time_start": 1.75,
+    "time_end": 2.0,
+    "target": "dialogue_main",
+    "masker": "music_pad",
+    "severity": 0.4125995690052646,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "evidence": {
+      "target_clarity_db": -85.06,
+      "masker_clarity_db": -83.63
+    }
+  },
+  {
+    "id": "issue_7",
+    "issue_type": "dialogue_masking",
+    "time_start": 2.0,
+    "time_end": 2.25,
+    "target": "dialogue_main",
+    "masker": "music_pad",
+    "severity": 0.4125995690052646,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "evidence": {
+      "target_clarity_db": -85.06,
+      "masker_clarity_db": -83.63
+    }
+  },
+  {
+    "id": "issue_8",
+    "issue_type": "dialogue_masking",
+    "time_start": 2.25,
+    "time_end": 2.5,
+    "target": "dialogue_main",
+    "masker": "music_pad",
+    "severity": 0.4125995690052646,
+    "reason": "music_pad overlaps dialogue clarity bands near dialogue_main.",
+    "evidence": {
+      "target_clarity_db": -85.06,
+      "masker_clarity_db": -83.63
+    }
+  }
+]
