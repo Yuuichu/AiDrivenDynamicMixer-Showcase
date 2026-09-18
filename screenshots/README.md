@@ -1,13 +1,20 @@
 # Screenshots
 
-Empty in this draft. The HTML report in `demo/report.html` already shows the output format; what is missing is the tool in use, and capturing that against a real session would risk exposing client material.
+One screenshot is included; the rest of this list still requires a human with the right host running.
 
-## What should be captured
+## Captured
 
-1. **`hero-report.png`** — `demo/report.html` rendered in a browser. The report is the product's face, and it can be captured from the synthetic demo without any risk.
+| File | Shows |
+|---|---|
+| `report.png` | The full HTML report for the bundled synthetic session, rendered headlessly: session/track table, feature summary, spatial summary, all 8 detected `dialogue_masking` issues with severities and time ranges, and all 8 recommendations with `Human review: yes` |
+
+This is genuine tool output from the repository's own example stems, so it exposes no production material.
+
+## What should be captured next
+
+1. **`cli-run.png`** — the CLI invocation that produces the artefacts, showing the output paths.
 2. **`cli-run.png`** — the CLI run that produces the artefacts, showing the output paths.
-3. **`issues-table.png`** — the issue list with severity and time ranges, which is the "evidence, not vibes" story in one image.
-4. **`spatial-fixture.png`** — a **stereo** synthetic fixture demonstrating `spatial_conflict` and `dialogue_wider_than_expected`. The current demo is mono, so these criteria are not visible yet; this capture requires building a stereo fixture first.
+2. **`spatial-fixture.png`** — a **stereo** synthetic fixture demonstrating `spatial_conflict` and `dialogue_wider_than_expected`. The current demo is mono, so these criteria are not visible yet; this capture requires building a stereo fixture first.
 5. **`reaper-window.png`** — the analysed stems in REAPER with a finding's time range selected, closing the loop from report to session.
 
 ## Constraints on what may be shown

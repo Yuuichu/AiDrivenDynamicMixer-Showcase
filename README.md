@@ -2,7 +2,7 @@
 
 Cross-host mix diagnostics: analyse offline stems or runtime telemetry, locate **dialogue masking** and **spatial conflicts**, and produce a reviewable JSON/HTML report — without ever modifying the session.
 
-![Structured mix report for the bundled example session](demo/report.html)
+![The HTML report for the bundled example session](screenshots/report.png)
 
 ## Why I Built This
 
@@ -102,14 +102,14 @@ These are deliberate boundaries, not a roadmap:
 - **Recommendations are starting points, not answers.** Confidence values are low by design (the bundled example scores ≈ 0.35), and `requires_human_review` is always true. Mixing is an aesthetic decision.
 - **Loudness is an approximation**, not an ITU-R BS.1770 measurement, and band energy is per-frame, not perceptually weighted.
 - **Thresholds are heuristics** tuned on example material; they are documented in the source precisely so they can be argued with.
-- **The per-second action report ships with project-specific strings** in the current private source (track-name mappings and a report title). Those must be made generic before publication — see `PUBLICATION_CHECKLIST.md`.
+- **Track labels are derived heuristically.** The per-second report derives short labels from track ids (stripping a numeric index prefix, honouring a `_vo_` convention) and matches remediation rules on label keywords, so unusual naming conventions may produce less specific advice than a hand-tuned mapping would.
 - **Synthetic fixtures only.** The bundled example is generated test material; the tool has not been validated against a large set of real sessions.
 
 ## Repository Scope
 
 This is a portfolio showcase repository. The full development repository remains private.
 
-Included: the masking/rule-engine/report core, the CLI-visible data contract, the example telemetry input, and demo output generated from synthetic stems. Excluded: all session analysis output from real projects, per-second report modules carrying project-specific strings, and production audio.
+Included: the masking/rule-engine/report core, the CLI-visible data contract, the example telemetry input, and demo output generated from synthetic stems. Excluded: session analysis output from real projects, the REAPER/Wwise adapter implementations, and production audio.
 
 ## Tech Stack
 

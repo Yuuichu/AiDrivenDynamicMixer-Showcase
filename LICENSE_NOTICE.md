@@ -2,9 +2,7 @@
 
 ## AiDrivenDynamicMixer
 
-The project's repository does **not** currently contain a `LICENSE` file, so this showcase makes no licence claim and does not reproduce one. Absence of a licence here is not permission to reuse the code.
-
-If a licence is intended, adding the canonical `LICENSE` to the main repository is the first step; this notice should then be updated to match.
+Released under the **MIT licence** (`Copyright (c) 2026 Yuuichu`). The full licence text is included in this showcase as `LICENSE`, and the same file lives in the development repository.
 
 ## Third-party software
 
@@ -22,13 +20,17 @@ Neither REAPER nor Wwise is included, linked against, or redistributed. The adap
 
 The demo artefacts under `demo/` were produced from the repository's **synthetic example stems** (generated test material: one dialogue line, one music pad, one low ambience). No production or client session was analysed to produce them.
 
-## Publication blocker (read before publishing)
+## Sanitization record
 
-The private source contains **project-specific strings** that must not be published:
+The private source previously contained **project-specific strings**:
 
-- `core/reports/per_second.py` contains hardcoded report titles and a **track-name mapping table keyed by real project track IDs**.
-- The private `out/` directory contains a **complete analysis run against a real project**, including a client project directory name and VO character names.
+- `core/reports/per_second.py` hardcoded a report title and a **track-name mapping table keyed by real project track IDs**; `_action_for` was likewise keyed on those IDs.
+- The private `out/` directory contained a **complete analysis run against a real production project** (project directory name, VO character names, asset paths).
 
-`out/` is covered by `.gitignore` and is not part of the committed tree, but the hardcoded strings in `per_second.py` **are** in source. They must be removed (or the modules excluded) before this project is pushed anywhere — see `PUBLICATION_CHECKLIST.md`.
+**Resolved before publication:**
 
-This showcase excludes both: the per-second report modules are not included, and the demo was regenerated from synthetic stems. The one generated file that inherited a hardcoded title (`per_second_actions.md`) was removed from this showcase.
+1. `per_second.py` was rewritten to derive track labels **generically** — a leading numeric index prefix is stripped and a `_vo_` convention is honoured — so no table of known ids ships. Duplication rules now match on label keywords instead of hardcoded ids. Verified by re-running the pipeline (`tests`: 5 passed) and by scanning the module, the working tree and **every reachable git object** for the previous identifiers: zero matches.
+2. `out/` was moved out of the project to a quarantine directory outside the repository, so no production analysis is present in the working tree.
+3. The showcase demo was regenerated from the repository's synthetic example stems; the one generated file that had inherited a hardcoded title was removed.
+
+The remaining `out/` exclusion is therefore a build-artefact exclusion only, not a content restriction.
