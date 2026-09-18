@@ -1,5 +1,7 @@
 # Method
 
+> **English** | [简体中文](method.zh-CN.md)
+
 The analysis answers a narrow question: **where, and by how much, does something interfere with intelligibility or the spatial image?** It answers with numbers and time ranges, and it never changes the session.
 
 ## 1. Feature extraction — parameterised, not raw audio

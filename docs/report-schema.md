@@ -1,5 +1,7 @@
 # Report schema
 
+> **English** | [简体中文](report-schema.zh-CN.md)
+
 Four JSON documents plus an HTML rendering. The same structures are what a future model adapter would consume, which is why they are specified explicitly rather than being incidental output.
 
 All timestamps are **seconds** (floats); all levels are **dBFS approximations**.

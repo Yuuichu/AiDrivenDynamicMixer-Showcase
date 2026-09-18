@@ -1,5 +1,7 @@
 # AiDrivenDynamicMixer
 
+> **English** | [简体中文](README.zh-CN.md)
+
 Cross-host mix diagnostics: analyse offline stems or runtime telemetry, locate **dialogue masking** and **spatial conflicts**, and produce a reviewable JSON/HTML report — without ever modifying the session.
 
 ## Why I Built This
